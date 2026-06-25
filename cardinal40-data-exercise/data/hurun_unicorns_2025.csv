@@ -1,0 +1,10 @@
+rank,country,unicorns,world_share_pct,new_faces_this_year,source,source_url,access_date,notes
+1,United States,758,49.8,108,"Hurun Global Unicorn Index 2025",https://www.hurun.net/en-us/info/detail?num=2DVQ51ORRGTH,2026-06-23,"Some secondary aggregators report 55 new; primary Hurun says 108"
+2,China,343,22.5,36,"Hurun Global Unicorn Index 2025",https://www.hurun.net/en-us/info/detail?num=2DVQ51ORRGTH,2026-06-23,"Net +3; 19 promoted via IPO (most of any country)"
+3,India,64,4.2,NA,"Hurun Global Unicorn Index 2025",https://www.hurun.net/en-us/info/detail?num=2DVQ51ORRGTH,2026-06-23,""
+4,United Kingdom,61,4.0,NA,"Hurun Global Unicorn Index 2025",https://www.hurun.net/en-us/info/detail?num=2DVQ51ORRGTH,2026-06-23,"1st in Europe"
+5,Germany,36,2.4,NA,"Hurun Global Unicorn Index 2025",https://www.hurun.net/en-us/info/detail?num=2DVQ51ORRGTH,2026-06-23,""
+6,France,30,2.0,NA,"Hurun Global Unicorn Index 2025",https://www.hurun.net/en-us/info/detail?num=2DVQ51ORRGTH,2026-06-23,""
+7,Canada,28,1.8,NA,"Hurun Global Unicorn Index 2025",https://www.hurun.net/en-us/info/detail?num=2DVQ51ORRGTH,2026-06-23,""
+NA,European Union (combined),112,7.4,NA,"Hurun Global Unicorn Index 2025",https://www.hurun.net/en-us/info/detail?num=2DVQ51ORRGTH,2026-06-23,"<8% of world unicorns vs ~20% of global GDP"
+NA,World total,1523,100.0,203,"Hurun Global Unicorn Index 2025",https://www.hurun.net/en-us/info/detail?num=2DVQ51ORRGTH,2026-06-23,"52 countries, 307 cities; cut-off 1 Jan 2025"

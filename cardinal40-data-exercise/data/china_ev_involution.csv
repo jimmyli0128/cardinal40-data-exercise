@@ -1,0 +1,9 @@
+metric,value,unit,year,source,source_url,access_date,notes
+ev_phev_brands,129,count,2024,"AlixPartners 2025 Global Automotive Outlook",https://www.alixpartners.com/newsroom/2025-alixpartners-global-automotive-outlook-china/,2026-06-23,"Across ~50 carmakers"
+brands_viable_by_2030,15,count,2030,"AlixPartners (via Reuters)",https://www.globalbankingandfinance.com/UK-CHINA-AUTOS-9391e7b5-7da3-4fcb-93ba-5ff07ecb983a,2026-06-23,"Base case ~10, optimistic 15; ~114 brands exit/merge"
+survivor_market_share_2030,75,percent,2030,"AlixPartners (via Reuters)",https://www.globalbankingandfinance.com/UK-CHINA-AUTOS-9391e7b5-7da3-4fcb-93ba-5ff07ecb983a,2026-06-23,"Each survivor avg 1.02M units/yr"
+plant_capacity_utilization,50,percent,2024,"AlixPartners (via SCMP)",https://www.scmp.com/business/china-business/article/3316864/chinas-ev-price-war-dashes-profit-hopes-90-brands-alixpartners-says,2026-06-23,"Lowest in a decade"
+profitable_ev_makers,3,count,2025,"Industry reporting (mid-2025)",https://www.scmp.com/business/china-business/article/3316864/chinas-ev-price-war-dashes-profit-hopes-90-brands-alixpartners-says,2026-06-23,"Amid record ~16.8% discounts; secondary source -- weaker evidence"
+govt_support_ev_sector_2009_2023,230,USD_billion,2023,"CSIS estimate (via reporting)",https://www.alixpartners.com/newsroom/2025-alixpartners-global-automotive-outlook-china/,2026-06-23,"Analytical estimate; attribute as such"
+car_subsidy_share_central_fiscal_revenue,3,percent,2024,"Rhodium Group estimate (via reporting)",https://www.alixpartners.com/newsroom/2025-alixpartners-global-automotive-outlook-china/,2026-06-23,"Analyst called level 'probably unsustainable'"
+new_operating_model_cost_advantage,30,percent,2025,"AlixPartners",https://www.alixpartners.com/newsroom/2025-alixpartners-global-automotive-outlook-china/,2026-06-23,"COUNTER-NUANCE: China brings cars to market ~2x faster, 40-50% less investment"

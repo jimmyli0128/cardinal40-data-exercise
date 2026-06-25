@@ -1,0 +1,11 @@
+stage,metric,us_input,china_input,formula,result,leader,flag,source
+Start,"TEA participation rate","19% of adults","7% of adults","19 / 7","2.7x (contested)",US_rate,"absolute firm volume favors China; not a clean win","GEM 2024/25; GEM China 2023"
+Staff,"STEM PhDs per year (chart metric)","40,000","77,000","77,000 / 40,000","1.93 -> 1.9x",China,"bachelor's ratio is 3.57M/820k = 4.4x (alternative)","CSET; ITIF/NSF"
+Fund,"Venture capital as % of GDP","0.72% (=$209B / $29.18T)","0.19% (=~$35B / $18.74T)","0.72 / 0.19","3.79 -> 3.8x",US,"China VC ~$35B is ESTIMATED; ratio approximate","KPMG Venture Pulse; IMF WEO GDP"
+Scale,"Unicorns per million people","2.23 (=758 / 340M)","0.243 (=343 / 1,410M)","2.23 / 0.243","9.18 -> 9.2x",US,"the rebuttal-killer","Hurun 2025; UN WPP 2024 population"
+Exit,"Listed market cap as % of GDP","~190%","~65%","190 / 65","2.92 -> 2.9x",US,"exact values to confirm via World Bank API","World Bank CM.MKT.LCAP.GD.ZS"
+Recycle,"Insolvency recovery rate (cents/$)","81","37","81 / 37","2.19 -> 2.2x",US,"2019-vintage (Doing Business discontinued)","World Bank Doing Business 2020"
+Demand,"Household consumption as % of GDP","~68%","39.6%","68 / 39.6","1.72 -> 1.7x",US,"China side verified; US side to confirm via API","World Bank NE.CON.PRVT.ZS"
+Durability,"Listed-company ROE","~18%","7.9%","18 / 7.9","2.28 -> 2.3x",US,"US is S&P500/Damodaran approx; use Damodaran regional for clean match","CEIC (China); Damodaran/S&P (US)"
+Capital,"Gross fixed capital formation as % of GDP","~21%","40.45%","40.45 / 21","1.93 -> 1.9x",China,"REPLACES unverified $184B; broad investment-intensity metric","World Bank NE.GDI.FTOT.ZS (2023)"
+Manufacturing,"Share of global manufacturing value-added","~16%","~28-29%","28.5 / 16","1.78 -> 1.8x",China,"REPLACES unverified AlixPartners auto-speed; scale not speed","UN Statistics Div / World Bank / CSIS (2023)"

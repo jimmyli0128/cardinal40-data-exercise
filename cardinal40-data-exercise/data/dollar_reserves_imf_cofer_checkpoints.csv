@@ -1,0 +1,9 @@
+currency,share_pct,quarter,source,source_url,access_date,notes
+US dollar,56.77,2025Q4,"IMF COFER",https://data.imf.org/en/datasets/IMF.STA:COFER,2026-06-23,"Down from ~72% peak (2001); decline mostly FX valuation effect"
+Euro,20.25,2025Q4,"IMF COFER",https://data.imf.org/en/datasets/IMF.STA:COFER,2026-06-23,""
+Japanese yen,5.56,2025Q4,"IMF COFER",https://data.imf.org/en/datasets/IMF.STA:COFER,2026-06-23,""
+British pound,4.64,2025Q4,"IMF COFER",https://data.imf.org/en/datasets/IMF.STA:COFER,2026-06-23,""
+Canadian dollar,2.49,2025Q4,"IMF COFER",https://data.imf.org/en/datasets/IMF.STA:COFER,2026-06-23,""
+Australian dollar,2.01,2025Q4,"IMF COFER",https://data.imf.org/en/datasets/IMF.STA:COFER,2026-06-23,""
+Chinese renminbi,1.95,2025Q4,"IMF COFER",https://data.imf.org/en/datasets/IMF.STA:COFER,2026-06-23,"Has NOT risen to fill dollar's lost share"
+Swiss franc,0.19,2025Q4,"IMF COFER",https://data.imf.org/en/datasets/IMF.STA:COFER,2026-06-23,""

@@ -1,0 +1,8 @@
+company,index_weight_pct,founder_built,founder_led_today,source,as_of
+Nvidia,7.90,yes,yes,"S&P 500 index float weights",2026-06
+Apple,6.78,yes,no,"S&P 500 index float weights",2026-06
+Alphabet,6.03,yes,no,"S&P 500 index float weights",2026-06
+Microsoft,4.37,yes,no,"S&P 500 index float weights",2026-06
+Amazon,3.71,yes,no,"S&P 500 index float weights",2026-06
+Meta,1.96,yes,yes,"S&P 500 index float weights",2026-06
+Tesla,1.75,yes,yes,"S&P 500 index float weights",2026-06

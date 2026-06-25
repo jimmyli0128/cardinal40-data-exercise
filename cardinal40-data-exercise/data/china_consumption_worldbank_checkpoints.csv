@@ -1,0 +1,4 @@
+entity,year,household_consumption_pct_gdp,source,source_url,indicator,access_date,notes
+China,2023,39.57,"World Bank WDI",https://data.worldbank.org/indicator/NE.CON.PRVT.ZS?locations=CN,NE.CON.PRVT.ZS,2026-06-23,"Checkpoint; full series via pull script"
+World (average),2023,63.62,"World Bank WDI",https://data.worldbank.org/indicator/NE.CON.PRVT.ZS,NE.CON.PRVT.ZS,2026-06-23,"~155 countries"
+United States,2023,NA,"World Bank WDI",https://data.worldbank.org/indicator/NE.CON.PRVT.ZS?locations=US,NE.CON.PRVT.ZS,2026-06-23,"Pull via API; typically high-60s%"

@@ -1,0 +1,8 @@
+period,window_midpoint,country,technologies_led,total_technologies,share_pct,source,source_url,access_date,notes
+2003-2007,2005,China,3,64,4.7,"ASPI two-decade Critical Technology Tracker (2024)",https://www.aspi.org.au/report/aspis-two-decade-critical-technology-tracker/,2026-06-23,"Research-output leadership only"
+2003-2007,2005,United States,60,64,93.8,"ASPI two-decade Critical Technology Tracker (2024)",https://www.aspi.org.au/report/aspis-two-decade-critical-technology-tracker/,2026-06-23,"Research-output leadership only"
+2018-2022,2020,China,52,64,81.3,"ASPI Critical Technology Tracker (2023 release)",https://www.aspi.org.au/report/critical-technology-tracker/,2026-06-23,"Prior-year tracker"
+2019-2023,2021,China,57,64,89.1,"ASPI two-decade Critical Technology Tracker (2024)",https://www.aspi.org.au/report/aspis-two-decade-critical-technology-tracker/,2026-06-23,"Up from 52"
+2019-2023,2021,United States,7,64,10.9,"ASPI two-decade Critical Technology Tracker (2024)",https://www.aspi.org.au/report/aspis-two-decade-critical-technology-tracker/,2026-06-23,"Holdouts"
+2020-2024,2022,China,66,74,89.2,"ASPI Critical Technology Tracker 2025 update (74 tech)",https://www.aspistrategist.org.au/aspis-critical-technology-tracker-2025-updates-and-10-new-technologies/,2026-06-23,"74-technology dataset"
+2020-2024,2022,United States,8,74,10.8,"ASPI Critical Technology Tracker 2025 update (74 tech)",https://www.aspistrategist.org.au/aspis-critical-technology-tracker-2025-updates-and-10-new-technologies/,2026-06-23,"74-technology dataset"

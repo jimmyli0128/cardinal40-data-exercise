@@ -1,0 +1,5 @@
+country,age_band,year,population_millions,variant,source,source_url,access_date,notes
+China,15-64,2024,984,Medium,"UN WPP 2024",https://population.un.org/wpp/,2026-06-23,"Peaked 2015; checkpoint"
+China,15-64,2050,745,Medium,"UN WPP 2024",https://population.un.org/wpp/,2026-06-23,"Change -239M (~-24%)"
+India,15-64,2024,990,Medium,"UN WPP 2024",https://population.un.org/wpp/,2026-06-23,"Contrast case"
+India,15-64,2050,1130,Medium,"UN WPP 2024",https://population.un.org/wpp/,2026-06-23,"Change +144M"

@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run exhibit script",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/cardinal40-data-exercise/plot_exhibit1.py",
+      "cwd": "${workspaceFolder}/cardinal40-data-exercise",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    }
+  ]
+}

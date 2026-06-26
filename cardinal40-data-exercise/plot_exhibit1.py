@@ -53,31 +53,36 @@ axL.set_xticks(gxx); axL.set_xticklabels(["2003\u20132007", "2019\u20132023"], f
 axL.set_ylim(0, 80); axL.set_yticks([0,20,40,60,80]); axL.set_xlim(-0.7, 1.85)
 axL.tick_params(length=0, labelsize=10)
 for s in ["top","right"]: axL.spines[s].set_visible(False)
-axL.set_title("Technologies Led (out of 64)", fontsize=13.5, fontweight="bold", color=INK, loc="left", pad=24)
+fig.text(0.05, 0.81, "Technologies Led (out of 64)", fontsize=13.5, fontweight="bold", color=INK)
 axBG = fig.add_axes([0,0,1,1], zorder=5); axBG.axis("off"); axBG.set_xlim(0,1); axBG.set_ylim(0,1)
 # legend inside the chart, in the empty valley between the two tall bars
 axL.scatter(0.42, 73, marker="s", s=150, color=NAVY); axL.text(0.53, 73, "United States", va="center", fontsize=11, color=INK)
 axL.scatter(0.42, 64, marker="s", s=150, color=RED);  axL.text(0.53, 64, "China", va="center", fontsize=11, color=INK)
 
 # ===================== A-CENTER: flipped callout =====================
-axC = fig.add_axes([0.275, 0.58, 0.115, 0.165]); axC.axis("off"); axC.set_xlim(0,1); axC.set_ylim(0,1)
+axC = fig.add_axes([0.295, 0.58, 0.115, 0.165]); axC.axis("off"); axC.set_xlim(0,1); axC.set_ylim(0,1)
 axC.add_patch(FancyBboxPatch((0.06, 0.10), 0.88, 0.82, boxstyle="round,pad=0.03,rounding_size=0.10",
                              fc=BG, ec="#dcdcd8", lw=1.3, mutation_aspect=0.7))
 axC.text(0.5, 0.66, "China's lead\nflipped from", ha="center", va="center", fontsize=13.5, color=INK, fontweight="bold")
 axC.text(0.5, 0.28, "3 to 57", ha="center", va="center", fontsize=21, color=RED, fontweight="bold")
-# dotted connector + up arrow under the box
-axBG.add_line(Line2D([0.333,0.333],[0.50,0.575], ls=(0,(1,2.4)), color="#b9b9b9", lw=1.4))
-axBG.annotate("", xy=(0.333,0.575), xytext=(0.333,0.535), arrowprops=dict(arrowstyle="-|>", color="#b9b9b9", lw=1.4))
+# 90-degree orthogonal connector from the "2003-2007" label to the center callout box
+# Traces a sharp, stepped path: Down from label -> Across -> Straight up into the box center
+axBG.add_line(Line2D([0.11, 0.11, 0.35, 0.35], [0.53, 0.50, 0.50, 0.57], 
+                     ls="--", color="#b9b9b9", lw=1.5))
+
+# Sharp vertical arrowhead cap pointing directly into the bottom center of the box
+axBG.annotate("", xy=(0.35, 0.58), xytext=(0.35, 0.565),
+             arrowprops=dict(arrowstyle="-|>", color="#b9b9b9", lw=1.5, mutation_scale=12))
 
 # ===================== A-RIGHT: research-share big numbers =====================
-fig.text(0.455, 0.792, "Share of High-Impact Research (%)", fontsize=13.5, fontweight="bold", color=INK)
-fig.text(0.455, 0.762, "2019\u20132023", fontsize=11, color=GREY)
-fig.text(0.475, 0.66, f"{us_research}%", fontsize=44, fontweight="bold", color=NAVY, ha="center")
-fig.text(0.475, 0.615, "United States", fontsize=12.5, color=INK, ha="center")
-fig.text(0.585, 0.66, f"{cn_research}%", fontsize=44, fontweight="bold", color=RED, ha="center")
-fig.text(0.585, 0.615, "China", fontsize=12.5, color=INK, ha="center")
+fig.text(0.455, 0.81, "Current Share of High-Impact Research (%)", fontsize=13.5, fontweight="bold", color=INK)
+fig.text(0.455, 0.782, "2019\u20132023", fontsize=11, color=GREY)
+fig.text(0.53, 0.66, f"{us_research}%", fontsize=44, fontweight="bold", color=NAVY, ha="center")
+fig.text(0.53, 0.615, "United States", fontsize=12.5, color=INK, ha="center")
+fig.text(0.66, 0.66, f"{cn_research}%", fontsize=44, fontweight="bold", color=RED, ha="center")
+fig.text(0.66, 0.615, "China", fontsize=12.5, color=INK, ha="center")
 # "~3x larger" callout
-axW = fig.add_axes([0.448, 0.47, 0.235, 0.085]); axW.axis("off"); axW.set_xlim(0,1); axW.set_ylim(0,1)
+axW = fig.add_axes([0.48, 0.495, 0.235, 0.085]); axW.axis("off"); axW.set_xlim(0,1); axW.set_ylim(0,1)
 axW.add_patch(FancyBboxPatch((0.02, 0.08), 0.96, 0.84, boxstyle="round,pad=0.02,rounding_size=0.10",
                              fc=BG, ec="#dcdcd8", lw=1.2, mutation_aspect=0.3))
 axW.scatter(0.11, 0.5, s=620, facecolor="white", edgecolor=INK, lw=1.6, zorder=2)
@@ -86,27 +91,40 @@ axW.text(0.22, 0.5, "China's share is ~3\u00d7 larger\nand the gap is widening."
          fontsize=12, color=INK)
 
 # ===================== A far-right: info =====================
-axI = fig.add_axes([0.80, 0.575, 0.185, 0.20]); axI.axis("off"); axI.set_xlim(0,1); axI.set_ylim(0,1)
+axI = fig.add_axes([0.75, 0.575, 0.185, 0.20]); axI.axis("off"); axI.set_xlim(0,1); axI.set_ylim(0,1)
 axI.scatter(0.07, 0.86, s=230, facecolor="white", edgecolor="#9aa0a8", lw=1.4, zorder=2)
 axI.text(0.07, 0.86, "i", ha="center", va="center", fontsize=11, style="italic", color="#5a6068", zorder=3)
 axI.text(0.16, 0.90, "High-impact papers are in the top\n10% most-cited research papers\n\u2014 a leading indicator of future\ncapability.",
          ha="left", va="top", fontsize=11.5, color="#555")
 
 # ===================== B =====================
-fig.text(0.032, 0.46, "B.   China now leads most technologies\u2014and is close behind in the rest",
+fig.text(0.032, 0.44, "B.   China now leads most technologies\u2014and is close behind in the rest",
          fontsize=15.5, fontweight="bold", color=NAVY)
 axB = fig.add_axes([0.03, 0.05, 0.945, 0.37]); axB.axis("off"); axB.set_xlim(0,1); axB.set_ylim(0,1)
-def column(x, icon, icol, head, sub, items, pcol):
+
+def column(x, icon, icol, head, sub, items, pcol, items_x=None):
+    # If items_x isn't specified, it defaults to the header's x position
+    if items_x is None:
+        items_x = x
+        
+    # Header elements (uses the 'x' parameter)
     axB.scatter(x+0.013, 0.88, s=540, color=icol, zorder=2)
     axB.text(x+0.013, 0.88, icon, ha="center", va="center", color="white", fontsize=13, fontweight="bold", zorder=3)
     axB.text(x+0.05, 0.905, head, ha="left", va="center", fontsize=13, fontweight="bold", color=icol)
     axB.text(x+0.05, 0.79, sub, ha="left", va="center", fontsize=10.5, style="italic", color="#777")
+    
+    # Technology list elements (uses the separate 'items_x' parameter)
     for i, (name, sh) in enumerate(items):
         yy = 0.58 - i*0.165
-        axB.text(x, yy, name, ha="left", va="center", fontsize=12, color=INK)
-        axB.text(x+0.21, yy, f"{sh}%", ha="right", va="center", fontsize=12.5, fontweight="bold", color=pcol)
+        axB.text(items_x, yy, name, ha="left", va="center", fontsize=12, color=INK)
+        axB.text(items_x+0.21, yy, f"{sh}%", ha="right", va="center", fontsize=12.5, fontweight="bold", color=pcol)
+
+# Draw the columns
 column(0.00, "\u2605", RED, "CHINA LEADS CLEARLY", "Decisive margins", clear, RED)
-column(0.255, "\u00bb", RED, "CHINA JUST PASSED THE US", "Overtook in the 2020s \u2014 narrow", flipped, RED)
+
+# Title is shifted to 0.225, but technologies stay anchored at 0.255
+column(0.225, "\u00bb", RED, "CHINA JUST PASSED THE US", "Overtook in the 2020s \u2014 narrow", flipped, RED, items_x=0.255)
+
 column(0.50, "\u25c6", NAVY, "U.S. STILL LEADS", "7 of 64", usleads, NAVY)
 # col 4: thin-gap bars
 x4 = 0.745
